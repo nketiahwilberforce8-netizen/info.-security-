@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// ============================================================================
+// NKETIAH SCHOOL MANAGEMENT SYSTEM - FIREBASE CLOUD STORAGE SECURITY RULES
+// ============================================================================
+// Only the Node.js Backend (via Firebase Admin SDK) is permitted to upload or
+// download encrypted database backups in Cloud Storage.
+// ============================================================================
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

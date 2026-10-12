@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "NKETIAH School Mobile",
+    "slug": "nketiah-school-security",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.nketiah.security"
+    },
+    "android": {
+      "package": "edu.nketiah.security"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}

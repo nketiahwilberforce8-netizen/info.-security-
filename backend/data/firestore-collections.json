@@ -1,0 +1,469 @@
+{
+  "users": {
+    "usr_admin_4fdb8ad2592c": {
+      "id": "usr_admin_4fdb8ad2592c",
+      "username": "nketiah_admin",
+      "usernameNormalized": "nketiah_admin",
+      "fullName": "Dr. Kofi Nketiah (Chief Security Administrator)",
+      "department": "School Administration & Cybersecurity",
+      "studentOrStaffId": "NK-ADM-2026-0001",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$uEJPw4Xx4afW0y4Qu9+NyA$EAEZfspovqooTJYF5znc5bRwBb25ciS1i1DN5Xt+LIs",
+      "twoFactorEnabled": false,
+      "totpSecretEncrypted": null,
+      "pendingTotpSecretEncrypted": null,
+      "failedLoginAttempts": 0,
+      "lockoutUntil": null,
+      "lastLoginAt": "2026-10-12T00:15:21.634Z",
+      "createdAt": "2026-10-12T00:15:21.634Z",
+      "updatedAt": "2026-10-12T00:15:21.634Z"
+    },
+    "usr_stu_4142b7210242": {
+      "id": "usr_stu_4142b7210242",
+      "username": "kwame_student",
+      "usernameNormalized": "kwame_student",
+      "fullName": "Kwame Mensah (BSc Information Technology)",
+      "department": "Information Technology",
+      "studentOrStaffId": "NK-STU-2026-1042",
+      "role": "USER",
+      "status": "ACTIVE",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$2xrDVON9CP6T0pPLb2MPrw$p9Knshw5rsvgOzUE2Laih2rNzHleG1XDW9zIS671ZUk",
+      "twoFactorEnabled": false,
+      "totpSecretEncrypted": null,
+      "pendingTotpSecretEncrypted": null,
+      "failedLoginAttempts": 0,
+      "lockoutUntil": null,
+      "lastLoginAt": "2026-10-12T00:15:21.634Z",
+      "createdAt": "2026-10-12T00:15:21.634Z",
+      "updatedAt": "2026-10-12T00:15:21.634Z"
+    },
+    "usr_2107067e-f9f1-45cb-abab-bb602825273d": {
+      "id": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "username": "Nketiah",
+      "usernameNormalized": "nketiah",
+      "fullName": "Nketiah",
+      "department": "Information Technology",
+      "studentOrStaffId": "NK-STU-2026-7833",
+      "role": "USER",
+      "status": "ACTIVE",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$V5EY2C8NCHBLeTX6wGESsQ$mpUF5SeRfEWjKP4sLd+rItxjQlq6hiYWoVfYSI0l61g",
+      "twoFactorEnabled": true,
+      "totpSecretEncrypted": {
+        "algorithm": "aes-256-gcm",
+        "ivHex": "9b6bd3da9e297b027340b870",
+        "authTagHex": "67690ae6beebb7aca0e2ea8b0373d70a",
+        "ciphertextHex": "256586a5cbdde2a6aee8a885e04703a1787969eb916c01fea70409ccb4bbedd5",
+        "keyVersion": 1
+      },
+      "pendingTotpSecretEncrypted": null,
+      "failedLoginAttempts": 0,
+      "lockoutUntil": null,
+      "lastLoginAt": "2026-10-12T00:52:56.142Z",
+      "createdAt": "2026-10-12T00:35:16.757Z",
+      "updatedAt": "2026-10-12T00:53:20.792Z"
+    }
+  },
+  "sessions": {
+    "ses_d00eb4d2-faa3-4b90-9c18-a40f8e625aa7": {
+      "id": "ses_d00eb4d2-faa3-4b90-9c18-a40f8e625aa7",
+      "userId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "username": "Nketiah",
+      "refreshTokenHash": "2c139c4b407b0f1fa7a61a195963cc8aba21f1088b064a5f062aadfaeb344267",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "ipAddress": "::1",
+      "revoked": true,
+      "expiresAt": "2026-10-19T00:35:16.760Z",
+      "createdAt": "2026-10-12T00:35:16.760Z",
+      "rotatedAt": "2026-10-12T00:46:56.979Z"
+    },
+    "ses_9238b6d3-240d-4cc6-aa7a-32faddf95c6c": {
+      "id": "ses_9238b6d3-240d-4cc6-aa7a-32faddf95c6c",
+      "userId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "username": "Nketiah",
+      "refreshTokenHash": "4a5fa236a6d253d7037f5c70244bc22e3ad7339c9090c62737fb52291db18951",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "ipAddress": "::1",
+      "revoked": true,
+      "expiresAt": "2026-10-19T00:46:56.980Z",
+      "createdAt": "2026-10-12T00:46:56.980Z",
+      "rotatedAt": "2026-10-12T00:46:56.985Z"
+    },
+    "ses_833d5929-aa13-4506-8b45-b78ead836b6a": {
+      "id": "ses_833d5929-aa13-4506-8b45-b78ead836b6a",
+      "userId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "username": "Nketiah",
+      "refreshTokenHash": "30323b57a913750b4418c1844e28bb9d431b60521df1b35138d5567a121759df",
+      "userAgent": "node",
+      "ipAddress": "::1",
+      "revoked": true,
+      "expiresAt": "2026-10-19T00:52:22.268Z",
+      "createdAt": "2026-10-12T00:52:22.268Z",
+      "rotatedAt": "2026-10-12T00:54:02.085Z"
+    },
+    "ses_b820de4b-a97c-41a9-b690-8c0a871d4b7b": {
+      "id": "ses_b820de4b-a97c-41a9-b690-8c0a871d4b7b",
+      "userId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "username": "Nketiah",
+      "refreshTokenHash": "6708ae11cf7b67e55235ccfa09193a6140bc99c2d5be4c712cb92f8bdc5a3bb7",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "ipAddress": "::1",
+      "revoked": true,
+      "expiresAt": "2026-10-19T00:52:56.144Z",
+      "createdAt": "2026-10-12T00:52:56.144Z",
+      "rotatedAt": "2026-10-12T00:54:02.081Z"
+    },
+    "ses_8a429e3e-4374-495e-bb38-30e2eaed93c7": {
+      "id": "ses_8a429e3e-4374-495e-bb38-30e2eaed93c7",
+      "userId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "username": "Nketiah",
+      "refreshTokenHash": "d86477a481add7bae64c0472a41a6eb589ef5d4eac58c5a056f665e0baef98ed",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "ipAddress": "::1",
+      "revoked": true,
+      "expiresAt": "2026-10-19T00:54:02.082Z",
+      "createdAt": "2026-10-12T00:54:02.082Z",
+      "rotatedAt": "2026-10-12T00:54:02.085Z"
+    }
+  },
+  "recoveryCodes": {
+    "usr_2107067e-f9f1-45cb-abab-bb602825273d": {
+      "id": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "userId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "codes": [
+        {
+          "codeHash": "9b9e624ee068f13fcb6cebb86ad021e53cb50a0e8eaac94cdb6b92a02a4a2806",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "9808b95c2cea4adafa761ff83f29af1b863590576b8f1bb7b38a258994a0c6fb",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "7ae650eba03be8eaf33b24e377d21e301efc3743e429775b7c8d93974e463a28",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "c2698ae647d97851ea0dc2823537d72a95061fa6bbe2f5497d7e475e33eb1385",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "f4faa75259288be590c709c076b1c10f3288518867a47055571aff104171667b",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "345a2d69ff5e0771f2bb5112a901bfcce460d672433a77cfbe54189f4c33644c",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "a89cc82fbc3d0c586f24e6ca9189067117e2fd266dbf160a98a56e5f5aa0cd7c",
+          "used": false,
+          "usedAt": null
+        },
+        {
+          "codeHash": "5631ad3fc65f7a4bf141f67d2ebadf4f4b56b033244ec10f3bf18a518933f9f0",
+          "used": false,
+          "usedAt": null
+        }
+      ],
+      "generatedAt": "2026-10-12T00:53:20.792Z"
+    }
+  },
+  "schoolNotices": {
+    "ntc_public_welcome": {
+      "id": "ntc_public_welcome",
+      "title": "Welcome to NKETIAH School Management System (2026/2027)",
+      "category": "GENERAL",
+      "content": "Welcome to the official NKETIAH School Portal. All students and staff authenticate strictly with their unique Username, Password, and TOTP Two-Factor Authentication (2FA). No email address is required.",
+      "visibility": "PUBLIC",
+      "authorUsername": "nketiah_admin",
+      "authorRole": "ADMIN",
+      "createdAt": "2026-10-12T00:15:21.634Z",
+      "updatedAt": "2026-10-12T00:15:21.634Z"
+    },
+    "ntc_public_admissions": {
+      "id": "ntc_public_admissions",
+      "title": "Department of Information Technology Academic Calendar",
+      "category": "ACADEMIC",
+      "content": "Mid-semester cybersecurity laboratory assessments and cryptographic project demonstrations begin this month. Ensure your student portal account is active.",
+      "visibility": "PUBLIC",
+      "authorUsername": "nketiah_admin",
+      "authorRole": "ADMIN",
+      "createdAt": "2026-10-12T00:15:21.634Z",
+      "updatedAt": "2026-10-12T00:15:21.634Z"
+    },
+    "ntc_user_security_policy": {
+      "id": "ntc_user_security_policy",
+      "title": "Mandatory 2FA Security Policy for NKETIAH Students & Staff",
+      "category": "SECURITY",
+      "content": "All authenticated NKETIAH students and staff are strongly encouraged to enable TOTP Two-Factor Authentication under Security Settings using Google Authenticator or Microsoft Authenticator.",
+      "visibility": "AUTHENTICATED_ONLY",
+      "authorUsername": "nketiah_admin",
+      "authorRole": "ADMIN",
+      "createdAt": "2026-10-12T00:15:21.634Z",
+      "updatedAt": "2026-10-12T00:15:21.634Z"
+    },
+    "ntc_admin_backup_directive": {
+      "id": "ntc_admin_backup_directive",
+      "title": "CONFIDENTIAL: Automated Firestore Backup & Encryption Protocol",
+      "category": "SECURITY",
+      "content": "Admin Directive: All Firestore collections are backed up automatically on a 6-hour schedule and encrypted at rest using AES-256-GCM with SHA-256 integrity verification.",
+      "visibility": "ADMIN_ONLY",
+      "authorUsername": "nketiah_admin",
+      "authorRole": "ADMIN",
+      "createdAt": "2026-10-12T00:15:21.634Z",
+      "updatedAt": "2026-10-12T00:15:21.634Z"
+    }
+  },
+  "auditLogs": {
+    "aud_1791764121749_b6987960": {
+      "id": "aud_1791764121749_b6987960",
+      "eventType": "REGISTER_SUCCESS",
+      "severity": "INFO",
+      "actorUserId": null,
+      "actorUsername": "SYSTEM_SEEDER",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "127.0.0.1",
+      "userAgent": "System",
+      "details": "Initialized default NKETIAH accounts (nketiah_admin [ADMIN], kwame_student [USER]) and school notices.",
+      "createdAt": "2026-10-12T00:15:21.749Z"
+    },
+    "aud_1791764121752_5d1cf642": {
+      "id": "aud_1791764121752_5d1cf642",
+      "eventType": "BACKUP_CREATED",
+      "severity": "INFO",
+      "actorUserId": null,
+      "actorUsername": "INITIAL_SYSTEM_SNAPSHOT",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "127.0.0.1",
+      "userAgent": "System",
+      "details": "Encrypted database backup bkp_2026-10-12T00-15-21-750Z_733c5c.enc.json created (8221 bytes, SHA-256 verified).",
+      "metadata": {
+        "backupId": "bkp_2026-10-12T00-15-21-750Z_733c5c",
+        "triggerType": "AUTOMATED_CRON",
+        "usersCount": 2,
+        "storageLocation": "LOCAL_ENCRYPTED_VAULT"
+      },
+      "createdAt": "2026-10-12T00:15:21.752Z"
+    },
+    "aud_1791764122564_ff1f976e": {
+      "id": "aud_1791764122564_ff1f976e",
+      "eventType": "DATABASE_RESTORED",
+      "severity": "WARNING",
+      "actorUserId": null,
+      "actorUsername": "CLI_OPERATOR",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "127.0.0.1",
+      "userAgent": "System",
+      "details": "Database successfully restored from encrypted backup bkp_2026-10-12T00-15-21-753Z_603e46.enc.json.",
+      "metadata": {
+        "backupId": "bkp_2026-10-12T00-15-21-753Z_603e46",
+        "restoredUsers": 2,
+        "restoredNotices": 4
+      },
+      "createdAt": "2026-10-12T00:15:22.564Z"
+    },
+    "aud_1791765316761_d09cfb59": {
+      "id": "aud_1791765316761_d09cfb59",
+      "eventType": "REGISTER_SUCCESS",
+      "severity": "INFO",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "New NKETIAH user 'Nketiah' (NK-STU-2026-7833) registered successfully.",
+      "createdAt": "2026-10-12T00:35:16.761Z"
+    },
+    "aud_1791765330349_c565a96f": {
+      "id": "aud_1791765330349_c565a96f",
+      "eventType": "2FA_SETUP_INITIATED",
+      "severity": "INFO",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "User 'Nketiah' initiated TOTP 2FA setup (secret encrypted with AES-256-GCM).",
+      "createdAt": "2026-10-12T00:35:30.349Z"
+    },
+    "aud_1791766093480_f5c2c429": {
+      "id": "aud_1791766093480_f5c2c429",
+      "eventType": "LOGIN_FAILED",
+      "severity": "WARNING",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "Invalid password attempt (1/5) for 'Nketiah'.",
+      "createdAt": "2026-10-12T00:48:13.480Z"
+    },
+    "aud_1791766101783_447eb56e": {
+      "id": "aud_1791766101783_447eb56e",
+      "eventType": "LOGIN_FAILED",
+      "severity": "WARNING",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "Invalid password attempt (2/5) for 'Nketiah'.",
+      "createdAt": "2026-10-12T00:48:21.783Z"
+    },
+    "aud_1791766103056_389da1b2": {
+      "id": "aud_1791766103056_389da1b2",
+      "eventType": "LOGIN_FAILED",
+      "severity": "WARNING",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "Invalid password attempt (3/5) for 'Nketiah'.",
+      "createdAt": "2026-10-12T00:48:23.056Z"
+    },
+    "aud_1791766103929_01fee336": {
+      "id": "aud_1791766103929_01fee336",
+      "eventType": "LOGIN_FAILED",
+      "severity": "WARNING",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "Invalid password attempt (4/5) for 'Nketiah'.",
+      "createdAt": "2026-10-12T00:48:23.930Z"
+    },
+    "aud_1791766104412_7d08fc9b": {
+      "id": "aud_1791766104412_7d08fc9b",
+      "eventType": "ACCOUNT_LOCKED",
+      "severity": "CRITICAL",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "Account 'Nketiah' locked for 15 minutes after 5 consecutive failed password attempts.",
+      "createdAt": "2026-10-12T00:48:24.412Z"
+    },
+    "aud_1791766342269_ffe331a5": {
+      "id": "aud_1791766342269_ffe331a5",
+      "eventType": "LOGIN_SUCCESS",
+      "severity": "INFO",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "node",
+      "details": "User 'Nketiah' (USER) logged in successfully.",
+      "createdAt": "2026-10-12T00:52:22.269Z"
+    },
+    "aud_1791766376145_665bec26": {
+      "id": "aud_1791766376145_665bec26",
+      "eventType": "LOGIN_SUCCESS",
+      "severity": "INFO",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "User 'Nketiah' (USER) logged in successfully.",
+      "createdAt": "2026-10-12T00:52:56.145Z"
+    },
+    "aud_1791766380853_5e0c372a": {
+      "id": "aud_1791766380853_5e0c372a",
+      "eventType": "2FA_SETUP_INITIATED",
+      "severity": "INFO",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "User 'Nketiah' initiated TOTP 2FA setup (secret encrypted with AES-256-GCM).",
+      "createdAt": "2026-10-12T00:53:00.853Z"
+    },
+    "aud_1791766400793_32ece975": {
+      "id": "aud_1791766400793_32ece975",
+      "eventType": "2FA_ENABLED",
+      "severity": "INFO",
+      "actorUserId": "usr_2107067e-f9f1-45cb-abab-bb602825273d",
+      "actorUsername": "Nketiah",
+      "targetUserId": null,
+      "targetUsername": null,
+      "ipAddress": "::1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+      "details": "User 'Nketiah' enabled TOTP 2FA and generated 8 hashed recovery codes.",
+      "createdAt": "2026-10-12T00:53:20.793Z"
+    }
+  },
+  "backupLogs": {
+    "bkp_2026-10-12T00-15-21-750Z_733c5c": {
+      "id": "bkp_2026-10-12T00-15-21-750Z_733c5c",
+      "backupId": "bkp_2026-10-12T00-15-21-750Z_733c5c",
+      "filename": "bkp_2026-10-12T00-15-21-750Z_733c5c.enc.json",
+      "triggerType": "AUTOMATED_CRON",
+      "status": "SUCCESS",
+      "storageLocation": "LOCAL_ENCRYPTED_VAULT",
+      "cloudBucketPath": null,
+      "localFilePath": "C:\\Users\\CONTROL C-TECH\\Desktop\\INFORMATION SECURITY NKETIAH\\backend\\backups\\bkp_2026-10-12T00-15-21-750Z_733c5c.enc.json",
+      "sizeBytes": 8221,
+      "checksumSha256": "da61f09f3732bef7d3b694912aae5b6c24cefa02080951b2a02dfd38a873d467",
+      "encryptionAlgorithm": "aes-256-gcm",
+      "collectionCounts": {
+        "users": 2,
+        "sessions": 0,
+        "recoveryCodes": 0,
+        "schoolNotices": 4,
+        "auditLogs": 1
+      },
+      "triggeredByUsername": "INITIAL_SYSTEM_SNAPSHOT",
+      "errorMessage": null,
+      "createdAt": "2026-10-12T00:15:21.750Z",
+      "restoredAt": null
+    },
+    "bkp_2026-10-12T00-15-21-753Z_603e46": {
+      "id": "bkp_2026-10-12T00-15-21-753Z_603e46",
+      "backupId": "bkp_2026-10-12T00-15-21-753Z_603e46",
+      "filename": "bkp_2026-10-12T00-15-21-753Z_603e46.enc.json",
+      "triggerType": "MANUAL_CLI",
+      "status": "RESTORED",
+      "storageLocation": "LOCAL_ENCRYPTED_VAULT",
+      "cloudBucketPath": null,
+      "localFilePath": "C:\\Users\\CONTROL C-TECH\\Desktop\\INFORMATION SECURITY NKETIAH\\backend\\backups\\bkp_2026-10-12T00-15-21-753Z_603e46.enc.json",
+      "sizeBytes": 9350,
+      "checksumSha256": "c2b6c14b6ba58d7134eaac0541eb4a0f0fea6ffaa02d8bb05cb8d2b922a478d6",
+      "encryptionAlgorithm": "aes-256-gcm",
+      "collectionCounts": {
+        "users": 2,
+        "sessions": 0,
+        "recoveryCodes": 0,
+        "schoolNotices": 4,
+        "auditLogs": 2
+      },
+      "triggeredByUsername": "CLI_OPERATOR",
+      "errorMessage": null,
+      "createdAt": "2026-10-12T00:15:21.753Z",
+      "restoredAt": "2026-10-12T00:15:22.562Z"
+    }
+  }
+}

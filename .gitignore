@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Environment Variables & Cryptographic Secrets (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Firebase & Google Cloud Credentials (NEVER COMMIT)
+serviceAccountKey.json
+**/serviceAccountKey.json
+firebase-adminsdk-*.json
+**/firebase-adminsdk-*.json
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Encrypted Database Backups (Local Vault)
+backend/backups/*.enc.json
+!backend/backups/.gitkeep
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+.expo/
+**/.expo/
+web-build/
+
+# Testing & Coverage
+coverage/
+**/coverage/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
