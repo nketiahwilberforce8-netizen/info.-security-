@@ -7,11 +7,16 @@ import { firestoreRepo } from './config/firebase';
 import { generalApiLimiter } from './middleware/rateLimiter';
 import { apiRouter } from './routes/apiRoutes';
 import { ensureDefaultNketiahSeedData } from './services/seedService';
+import { WEB_BUNDLE } from './webBundle';
 
 export const app = express();
 
-// 1. Helmet HTTP Security Headers (XSS protection, HSTS, X-Frame-Options, Content-Security-Policy)
-app.use(helmet());
+// 1. Helmet HTTP Security Headers (XSS protection, HSTS, X-Frame-Options)
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 
 // 2. CORS Policy supporting React Web (local + Vercel deployment) & Expo Mobile
 const allowedOrigins = env.CORS_ORIGINS.split(',').map((o) => o.trim());
@@ -76,7 +81,31 @@ app.get('/api/health', (_req: Request, res: Response) => {
 // 7. Mount Main REST API Router
 app.use('/api', apiRouter);
 
-// 7. 404 Handler
+// 8. Serve Bundled React Web Application for all non-/api GET routes
+app.use((req: Request, res: Response, next: NextFunction) => {
+  if (req.method !== 'GET' || req.path.startsWith('/api')) {
+    next();
+    return;
+  }
+
+  const exactAsset = WEB_BUNDLE[req.path];
+  if (exactAsset) {
+    res.setHeader('Content-Type', exactAsset.contentType);
+    res.status(200).send(exactAsset.content);
+    return;
+  }
+
+  const indexHtml = WEB_BUNDLE['/index.html'];
+  if (indexHtml) {
+    res.setHeader('Content-Type', indexHtml.contentType);
+    res.status(200).send(indexHtml.content);
+    return;
+  }
+
+  next();
+});
+
+// 9. 404 Handler
 app.use((req: Request, res: Response) => {
   res.status(404).json({
     success: false,

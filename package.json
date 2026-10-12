@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "NKETIAH School Management System - Full-Stack Security Architecture (React Web + Node.js Security API + Expo Mobile + Firestore)",
+  "main": "index.ts",
   "scripts": {
-    "build": "npm --prefix web install --include=dev && npm --prefix web run build",
+    "build:web": "npm --prefix web install --include=dev && npm --prefix web run build && node scripts/embedWebBuild.mjs",
     "dev:backend": "npm --prefix backend run dev",
     "dev:web": "npm --prefix web run dev",
     "test": "npm --prefix backend test"

@@ -10,6 +10,6 @@
     "resolveJsonModule": true,
     "moduleResolution": "node"
   },
-  "include": ["api/**/*", "backend/src/**/*"],
+  "include": ["index.ts", "backend/src/**/*"],
   "exclude": ["node_modules", "web", "mobile", "backend/tests", "backend/dist"]
 }
