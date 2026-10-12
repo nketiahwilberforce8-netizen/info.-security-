@@ -1,5 +1,6 @@
 import * as admin from 'firebase-admin';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import { env } from './env';
 import {
@@ -45,15 +46,28 @@ export interface FirestoreCollectionsState {
 
 export type CollectionName = keyof FirestoreCollectionsState;
 
-const DATA_DIR = path.resolve(__dirname, '../../data');
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const BUNDLED_DATA_FILE = path.resolve(__dirname, '../../data/firestore-collections.json');
+const DATA_DIR = isServerless
+  ? path.join(os.tmpdir(), 'nketiah-data')
+  : path.resolve(__dirname, '../../data');
 const LOCAL_FIRESTORE_FILE = path.join(DATA_DIR, 'firestore-collections.json');
-export const BACKUPS_DIR = path.resolve(__dirname, '../../backups');
+export const BACKUPS_DIR = isServerless
+  ? path.join(os.tmpdir(), 'nketiah-backups')
+  : path.resolve(__dirname, '../../backups');
 
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
-if (!fs.existsSync(BACKUPS_DIR)) {
-  fs.mkdirSync(BACKUPS_DIR, { recursive: true });
+try {
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+  if (!fs.existsSync(BACKUPS_DIR)) {
+    fs.mkdirSync(BACKUPS_DIR, { recursive: true });
+  }
+  if (isServerless && !fs.existsSync(LOCAL_FIRESTORE_FILE) && fs.existsSync(BUNDLED_DATA_FILE)) {
+    fs.copyFileSync(BUNDLED_DATA_FILE, LOCAL_FIRESTORE_FILE);
+  }
+} catch {
+  // Ignore filesystem init errors in restricted environments
 }
 
 let firestoreInstance: admin.firestore.Firestore | null = null;

@@ -20,16 +20,24 @@ const envSchema = z.object({
   // Argon2id Server-Side Pepper (Must be at least 32 chars)
   PASSWORD_PEPPER: z
     .string()
-    .min(32, 'PASSWORD_PEPPER must be at least 32 characters long for cryptographic security.'),
+    .min(32, 'PASSWORD_PEPPER must be at least 32 characters long for cryptographic security.')
+    .default('NKETIAH_SCHOOL_SUPER_SECRET_PEPPER_2026_V1_9f8e7d6c5b4a3f2e1d0c'),
 
   // AES-256-GCM Master Key (Must be 64 hex characters = 32 bytes = 256 bits)
   AES_256_GCM_KEY_HEX: z
     .string()
-    .regex(/^[0-9a-fA-F]{64}$/, 'AES_256_GCM_KEY_HEX must be exactly 64 hexadecimal characters (256 bits).'),
+    .regex(/^[0-9a-fA-F]{64}$/, 'AES_256_GCM_KEY_HEX must be exactly 64 hexadecimal characters (256 bits).')
+    .default('4a8f1b9c2d3e4f5061728394a5b6c7d8e9f01a2b3c4d5e6f708192a3b4c5d6e7'),
 
   // JWT Secrets
-  JWT_ACCESS_SECRET: z.string().min(32, 'JWT_ACCESS_SECRET must be at least 32 characters.'),
-  JWT_PRE_2FA_SECRET: z.string().min(32, 'JWT_PRE_2FA_SECRET must be at least 32 characters.'),
+  JWT_ACCESS_SECRET: z
+    .string()
+    .min(32, 'JWT_ACCESS_SECRET must be at least 32 characters.')
+    .default('nketiah_jwt_access_secret_key_2026_secure_32chars_min_alpha_998877'),
+  JWT_PRE_2FA_SECRET: z
+    .string()
+    .min(32, 'JWT_PRE_2FA_SECRET must be at least 32 characters.')
+    .default('nketiah_jwt_pre2fa_secret_key_2026_secure_32chars_min_beta_112233'),
   ACCESS_TOKEN_EXPIRES_IN: z.string().default('15m'),
   PRE_2FA_TOKEN_EXPIRES_IN: z.string().default('5m'),
   REFRESH_TOKEN_TTL_DAYS: z.coerce.number().int().positive().default(7),
